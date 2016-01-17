@@ -1,13 +1,19 @@
-'use strict';
+import React from 'react';
+import ReactDOM from 'react-dom';
+import configureStore from '../store/configureStore.js';
+import { Provider } from 'react-redux';
+import App from './components/App.js';
+import reducer from './reducers';
 
-var React       = require('react');
-var ReactDOM    = require('react-dom');
-var App         = require('./components/App.js');
-var rootElement = document.getElementById('react-content');
+require('../css/main.css');
 
-require('../styles/main.js');
+const store = configureStore();
+
+let rootElement = document.getElementById('react-content');
 
 ReactDOM.render(
-  <App />,
+  <Provider store={store}>
+    <App />
+  </Provider>,
   rootElement
 );

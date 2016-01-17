@@ -1,7 +1,7 @@
 {
-  "name": "react-template",
+  "name": "react-redux-conway",
   "version": "1.0.0",
-  "description": "Blank set up for new React Project",
+  "description": "Conways game brought to life with React and Redux",
   "main": "index.js",
   "scripts": {
     "build": "webpack --config webpack.production.config.js --progress --colors && open public/index.html",
@@ -9,21 +9,23 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jrans/React-Webpack-Set-Up.git"
+    "url": "git+https://github.com/nikhilaravi/react-redux-conway.git"
   },
   "keywords": [
     "React",
     "Webpack"
   ],
-  "author": "jrans",
+  "author": "nikhilaravi",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/jrans/React-Webpack-Set-Up/issues"
+    "url": "https://github.com/nikhilaravi/react-redux-conway/issues"
   },
-  "homepage": "https://github.com/jrans/React-Webpack-Set-Up#readme",
+  "homepage": "https://github.com/nikhilaravi/react-redux-conway#readme",
   "dependencies": {
     "react": "^0.14.1",
-    "react-dom": "^0.14.1"
+    "react-dom": "^0.14.1",
+    "react-redux": "^4.0.6",
+    "redux": "^3.0.5"
   },
   "devDependencies": {
     "babel-core": "^6.0.15",
