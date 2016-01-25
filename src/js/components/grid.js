@@ -11,9 +11,16 @@ class Grid extends Component {
   render() {
     console.log("props", this.props);
     const cells = this.props.cellArray.map((row, y) => {
-      return row.map((cell, x) => {
-        return <Cell isAlive={cell} toggleAlive={this.props.toggleAlive.bind(null, x, y)} />
-      })
+      console.log("ROW", row)
+      return (
+        <div className="grid-row">
+          {
+            row.map((cell, x) => {
+            return <Cell isAlive={cell} toggleAlive={this.props.toggleAlive.bind(null, x, y)} />
+            })
+          }
+        </div>
+      )
     })
 
     return (

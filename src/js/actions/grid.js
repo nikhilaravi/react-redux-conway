@@ -44,7 +44,7 @@ export function updateGrid(){
   return (dispatch, getState) => {
     const {app:active, grid: {newCellArray}} = getState();
     const tempCellArray = newCellArray.map((row, y) => {
-
+      console.log("ROW", row);
       return row.map((cellState, x) => {
         const neighbours = getNeighbours(newCellArray, [x,y]); //array of cell neighbours
 

@@ -12,7 +12,6 @@ class App extends Component {
     console.log("PROPS", this.props)
     return (
       <div>
-        <div>HELLO</div>
         <Grid/>
         <div className="control-button-container">
           <h1 onclick={this.props.start}>START</h1>

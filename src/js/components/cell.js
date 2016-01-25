@@ -2,18 +2,14 @@ import React, { Component, PropTypes } from 'react';
 
 class Cell extends Component {
 
-  constructor(){
-    super(props)
-  }
-
   render () {
-    console.log("PROPS", this.props.isAlive);
+    console.log("PROPS", this.props);
     const cssClass = this.props.isAlive ? 'cell-alive' : 'cell-dead';
     return (
-      <div className={cssClass}>
+      <div className={cssClass} onClick={this.props.toggleAlive}>
       </div>
     )
-  };
+  }
 };
 
 Cell.propTypes = {
